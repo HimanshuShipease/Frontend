@@ -2,7 +2,7 @@ import React from 'react';
 import { Line } from 'react-chartjs-2';
 import Chart from 'chart.js/auto';
 
-const Graph = ({ borderColor }) => {
+const Graph = () => {
   const data = {
     labels: ['Jan','Feb','Mar','Apr','May'],
     datasets: [
@@ -11,9 +11,8 @@ const Graph = ({ borderColor }) => {
         data: [100,120,100,110],
         data2: [220,100,140,80],
         fill: false,
-        tension: 0.1,
-        borderWidth: "1px",
-        borderColor: borderColor,
+        border: '4px solid red',
+        borderColor: 'red',
       },
     ],
   };
@@ -43,7 +42,7 @@ const Graph = ({ borderColor }) => {
   };
 
   return (
-    <div style={{ height: '35px', width: '102px' }}>
+    <div style={{ height: '50px', width: '120px' }}>
       <Line type="monotone" data={data} options={options}/>
     </div>
   );

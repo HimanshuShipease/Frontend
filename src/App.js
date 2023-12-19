@@ -1,3 +1,4 @@
+import 'devextreme/dist/css/dx.light.css';
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Sidebar from "./Component/common/sidebar/Sidebar";

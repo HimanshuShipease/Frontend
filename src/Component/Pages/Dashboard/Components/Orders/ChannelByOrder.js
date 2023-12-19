@@ -1,11 +1,10 @@
-import React, { useState, useEffect } from "react";
-import { LiaShippingFastSolid } from "react-icons/lia";
-import axios from "axios";
-import Col from "react-bootstrap/Col";
-import StateSplitDashboard from "../Overview/StateSplitDashboard";
+import React, { useEffect, useState } from 'react'
+import StateSplitDashboard from '../Overview/StateSplitDashboard'
+import { Col } from 'react-bootstrap'
+import axios from 'axios'
 
-function ChannelByOrder() {
-  const [shipmentData, setShipmentData] = useState('null');
+const ChannelByOrder = () => {
+  const [shipmentData, setShipmentData] = useState(null);
   const [totalCreated, setTotalCreated] = useState(null);
   const [totalToBePicked, setToBePicked] = useState(null);
   const [totalPicked, setPicked] = useState(null);
@@ -68,35 +67,12 @@ function ChannelByOrder() {
         setShipmentData(null);
       });
   }, [requestData]);
-
   return (
-    <Col className='col-3'>
+    <>
+<Col className='col-3'>
       <div className="box-shadow shadow-sm p10">
-        <div className="row">
-          <div className="col-8">
-            <div className="d-flex justify-content-start">
-              {/* <div className="infoCardIconContainer bg-red">
-                <LiaShippingFastSolid className="text-white font30" />
-              </div> */}
-              <div className="mb-3">
-                <p className="font13 text-gray m-0">Channel by Order</p>
-                {/* <h2 className="font20 title-text p-y bold-600 m0">{shipmentData?.today_shipment}</h2>
-                <p className="font12 text-red">Created {shipmentData?.today_created} </p> */}
-              </div>
-            </div>
-          </div>
-          {/* <div className="col-4">
-            <div className="text-end">
-              <img src="graph-red.png" className="inline-block w-100" />
-              <span className="text-color font13 pt20 bold-600 d-block">
-                ({totalCreated}%)
-              </span>
-              <p className="text-xs text-gray font13 m0 text-gray-600">
-                this month
-              </p>
-            </div>
-          </div> */}
-        </div>
+      <h4 className="font13 text-gray m-0 mb-3">Channel by Order</h4>
+
         <div className="row">
           <div className="col">
             <div className="progress-widget">
@@ -105,7 +81,7 @@ function ChannelByOrder() {
                 <p className="font12 bold-600 mb-10">
                   {shipmentData?.to_be_picked}
                   <span className="text-gray-light ">
-                    ({totalToBePicked}%)
+                    (12%)
                   </span>
                 </p>
               </div>
@@ -125,7 +101,7 @@ function ChannelByOrder() {
                 <p className="font12 bold-600 mb-10">
                   {shipmentData?.picked}{" "}
                   <span className="text-gray-light ">
-                    ({totalPicked}%)
+                    (12%)
                   </span>
                 </p>
               </div>
@@ -145,7 +121,7 @@ function ChannelByOrder() {
                 <p className="font12 bold-600 mb-10">
                   {shipmentData?.in_transit}{" "}
                   <span className="text-gray-light ">
-                    ({totalInTransit}%)
+                    (12%)
                   </span>
                 </p>
               </div>
@@ -165,7 +141,7 @@ function ChannelByOrder() {
                 <p className="font12 bold-600 mb-10">
                   {shipmentData?.out_for_delivery}{" "}
                   <span className="text-gray-light ">
-                    ({totalOutForDelivery}%)
+                    (12%)
                   </span>
                 </p>
               </div>
@@ -185,7 +161,7 @@ function ChannelByOrder() {
                 <p className="font12 bold-600 mb-10">
                   {shipmentData?.delivered}{" "}
                   <span className="text-gray-light ">
-                    ({totalDelivery}%)
+                    (12%)
                   </span>
                 </p>
               </div>
@@ -205,7 +181,7 @@ function ChannelByOrder() {
                 <p className="font12 bold-600 mb-10">
                   {shipmentData?.ndr}{" "}
                   <span className="text-gray-light ">
-                    ({totalNdr}%)
+                    (1.5%)
                   </span>
                 </p>
               </div>
@@ -226,8 +202,8 @@ function ChannelByOrder() {
         </div>
       </div>
       <StateSplitDashboard />
-    </Col>
-  );
+    </Col>    </>
+  )
 }
 
-export default ChannelByOrder;
+export default ChannelByOrder

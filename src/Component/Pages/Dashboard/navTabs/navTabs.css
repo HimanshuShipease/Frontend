@@ -10,3 +10,7 @@
 .alignContent a{
     text-decoration: none;
 }
+
+.navbar-expand .navbar-nav .nav-link{
+    padding: 5px 7px;
+}

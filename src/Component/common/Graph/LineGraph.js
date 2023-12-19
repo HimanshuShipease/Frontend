@@ -3,15 +3,15 @@
 import React from 'react';
 import { Line } from 'react-chartjs-2';
 
-const LineGraph = () => {
+const LineGraph = ({cardColor}) => {
   const data = {
     labels: ['January', 'February', 'March', 'April', 'May'],
     datasets: [
       {
-        label: 'Monthly Data',
+        label: ' ',
         data: [10, 20, 15, 25, 30],
         fill: false,
-        borderColor: 'rgba(75, 192, 192, 1)',
+        borderColor: cardColor,
         tension: 0.1,
         backgroundColor: 'rgba(0, 0, 0, 0)', // Set background color to transparent
       },
@@ -37,10 +37,17 @@ const LineGraph = () => {
         radius: 0, // Hide data points
       },
     },
+    animation: false,
+    hover: {
+      mode: null, // Disable hover interactions
+    },
+    tooltips: {
+      enabled: false, // Disable tooltips on hover
+    },
   };
 
   return (
-    <div style={{ height: '35px', width: '102px' }}>
+    <div style={{ height: '35px', width: '102px', display: 'flex' , justifyContent: 'flex-end' }}>
       {/* <h2>Linear Line Graph</h2> */}
       <Line data={data} options={options} />
     </div>

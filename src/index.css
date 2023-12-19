@@ -473,5 +473,17 @@ html::-webkit-scrollbar-track {
 }
 
 .card-height{
-  height: 143px;
+  height: 132px;
+}
+
+.ws-no-wrap{
+  white-space: nowrap;
+}
+
+.text-end{
+  text-align: end;
+}
+
+.gap-10{
+  gap: 10px;
 }
