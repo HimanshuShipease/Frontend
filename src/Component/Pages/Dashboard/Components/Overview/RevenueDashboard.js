@@ -118,10 +118,10 @@ function RevenueDashboard() {
 
       {/* old code */}
 
-      <div className="row justify-content-center">
-        <div className="col-md-8 col-sm-10">
-          <h2 className="title">Revenue Analytics</h2>
-          <div className="btn-group d-flex py-2" role="group" aria-label="Basic example">
+      <div className="row">
+        <div className="col">
+          <h4 className="title">Revenue Analytics</h4>
+          <div className="btn-group d-flex" role="group" aria-label="Basic example">
             <button type="button" className={`btn btn-primary tab-btn-ui ${selectedInterval === "1D" ? "active" : ""}`} onClick={() => setSelectedInterval("1D")}>1D</button>
             <button type="button" className={`btn btn-primary tab-btn-ui ${selectedInterval === "1W" ? "active" : ""}`} onClick={() => setSelectedInterval("1W")}>1W</button>
             <button type="button" className={`btn btn-primary tab-btn-ui ${selectedInterval === "1M" ? "active" : ""}`} onClick={() => setSelectedInterval("1M")}>1M</button>
@@ -132,7 +132,7 @@ function RevenueDashboard() {
         </div>
       </div>
       {/* <div className="">
-        <h2 className="title">Revenue Analytics</h2>
+        <h4 className="title">Revenue Analytics</h4>
         <div className="btn-group d-flex py-2" role="group" aria-label="Basic example">
           {filter.map((interval) => (
             <button
@@ -161,7 +161,7 @@ function RevenueDashboard() {
         <li className="bg-green-light text-green">
           <p>Shipment Amount</p>
           <p>
-            <AiOutlineArrowUp className="text-white font15" /> {totalRevenveShipment}%
+            <AiOutlineArrowUp className=" font15" /> {totalRevenveShipment}%
           </p>
           <p>{revenueAnalytic?.shipment_amount}</p>
         </li>
@@ -169,7 +169,7 @@ function RevenueDashboard() {
         <li className="bg-blue-light text-blue">
           <p>Prepaid Within Tat</p>
           <p>
-            <AiOutlineArrowUp className="text-white font15" /> {totalRevenveWithinTat}%
+            <AiOutlineArrowUp className=" font15" /> {totalRevenveWithinTat}%
           </p>
           <p>{revenueAnalytic?.prepaid_within_tat}</p>
         </li>
@@ -177,21 +177,21 @@ function RevenueDashboard() {
         <li className="bg-purple-light text-purple">
           <p>Prepaid Without Tat</p>
           <p>
-            <AiOutlineArrowUp className="text-white font15" /> {totalRevenveWithOutTat}%
+            <AiOutlineArrowUp className=" font15" /> {totalRevenveWithOutTat}%
           </p>
           <p>{revenueAnalytic?.prepaid_without_tat}</p>
         </li>
         <li className="bg-sky-light text-aqua">
           <p>COD Within tat</p>
           <p>
-            <AiOutlineArrowUp className="text-white font15" /> {totalRevenveCodWithinTat}%
+            <AiOutlineArrowUp className=" font15" /> {totalRevenveCodWithinTat}%
           </p>
           <p>{revenueAnalytic?.cod_within_tat}</p>
         </li>
         <li className="bg-purple-light">
           <p>COD Without tat</p>
           <p>
-            <AiOutlineArrowUp className="text-white font15" /> {totalRevenveCodWithOutTat}%
+            <AiOutlineArrowUp className=" font15" /> {totalRevenveCodWithOutTat}%
           </p>
           <p>{revenueAnalytic?.cod_without_tat}</p>
         </li>

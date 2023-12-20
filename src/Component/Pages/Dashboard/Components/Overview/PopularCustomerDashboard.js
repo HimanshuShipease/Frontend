@@ -27,7 +27,7 @@ function PopularCustomerDashboard() {
     },[])
     return (
         <div className="box-shadow shadow-sm p10">
-            <h2 className="title mb20">Most Popular Customers</h2>
+            <h4 className="title">Most Popular Customers</h4>
             {popularCustomer.map((customer) => (
                 <ul className="d-flex justify-content-between align-items-center p0 list-none">
                     <li>

@@ -71,7 +71,7 @@ const ChannelByOrder = () => {
     <>
 <Col className='col-3'>
       <div className="box-shadow shadow-sm p10">
-      <h4 className="font13 text-gray m-0 mb-3">Channel by Order</h4>
+      <h4 className="title">Channel by Order</h4>
 
         <div className="row">
           <div className="col">

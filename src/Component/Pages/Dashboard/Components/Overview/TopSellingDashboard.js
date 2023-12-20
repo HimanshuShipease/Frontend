@@ -26,29 +26,29 @@ function TopSellingDashboard() {
     },[requestData]);
 
     return (
-        <div className="box-shadow shadow-sm p10 mt15">
+        <div className="box-shadow shadow-sm p10 mt15 top-selling-page">
             <div className="d-flex justify-content-between align-items-center">
-                <h2 className="title">Top Selling Products</h2>
+                <h4 className="title">Top Selling Products</h4>
             </div>
             <div className="table-responsive">
-                <Table hover className="table-ui mt20">
+                <Table hover className="table-ui">
                     <thead>
                     <tr>
-                        <th scope="col" className="text-center">S.No</th>
+                        <th scope="col" style={{width: '7%'}}>S.No</th>
                         <th scope="col">Product Name</th>
-                        <th scope="col">Category</th>
-                        <th scope="col">Stock</th>
-                        <th scope="col">Total</th>
+                        <th scope="col" style={{width: '15%'}}>Category</th>
+                        <th scope="col" style={{width: '10%'}}>Stock</th>
+                        <th scope="col" style={{width: '8%'}}>Total</th>
                     </tr>
                     </thead>
                     <tbody>
                     {popularProduct.map((product,cnt) => (
                         <tr className="text-nowrap">
                             <td>{cnt + 1}</td>
-                            <td>{product?.product_name}</td>
+                            <td title={product?.product_name}>{product?.product_name}</td>
                             <td>Glossary</td>
                             <td>
-                                <span className="bg-green-light round-8 text-green x5-y10">
+                                <span className="text-green">
                                   In Stock
                                 </span>
                             </td>

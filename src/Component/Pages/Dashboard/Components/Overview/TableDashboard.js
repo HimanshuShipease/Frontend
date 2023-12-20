@@ -34,9 +34,9 @@ function TableDashboard() {
   }, []);
 
   return (
-      <div className="box-shadow shadow-sm p10 mt15">
+      <div className="box-shadow shadow-sm p10 mt15 last-orders">
           <div className="d-flex justify-content-between align-items-center">
-              <h2 className="title">Last 30 Days Order</h2>
+              <h4 className="title">Last 30 Days Order</h4>
 
               <Form.Select className="w15 font13">
                   <option>Order Date</option>

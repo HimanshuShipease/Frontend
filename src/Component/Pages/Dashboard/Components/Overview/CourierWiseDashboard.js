@@ -38,10 +38,7 @@ function CourierWiseDashboard() {
     return (
 
         <div className="box-shadow shadow-sm p10">
-
-            <h2 className="title">Courier Wise allocation</h2>
-
-
+            <h4 className="title">Courier Wise allocation</h4>
             <ul className="list-ui list-ui-point mt20">
                 {courierAllocation.map((courier) => (
                     <li  className="">

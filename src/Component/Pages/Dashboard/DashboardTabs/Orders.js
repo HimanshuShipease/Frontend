@@ -6,7 +6,7 @@ import CourierWiseDashboard from '../Components/Overview/CourierWiseDashboard'
 import PopularCustomerDashboard from '../Components/Overview/PopularCustomerDashboard'
 import ChannelByOrder from '../Components/Orders/ChannelByOrder'
 import TotalOrderInfo from '../Components/Orders/TotalOrderInfo'
-import TodayOrderDashboard from '../Components/Overview/TodayOrderDashboard'
+import TodayOrderDashboard from '../Components/Overview/TotalShipment'
 
 const Orders = () => {
   return (

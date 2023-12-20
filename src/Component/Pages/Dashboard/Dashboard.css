@@ -8,3 +8,29 @@
     border: 1px solid;
     cursor: pointer;
 }
+
+.top-selling-page table td{
+    max-width: 250px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.top-selling-page .table-ui th,
+.last-orders .table-ui th{
+    background: transparent;
+}
+
+.top-selling-page .table>:not(:last-child)>:last-child>*,
+.last-orders .table>:not(:last-child)>:last-child>*{
+    border-bottom-color: inherit;
+}
+
+.top-selling-page .table-hover>tbody>tr:hover,
+.last-orders .table-hover>tbody>tr:hover {
+    --bs-table-accent-bg: transparent;
+}
+
+.top-selling-page .table tbody tr:nth-of-type(odd),
+.last-orders .table tbody tr:nth-of-type(odd) {
+    --bs-table-accent-bg: #f2f2f2;
+}

@@ -38,8 +38,8 @@ function StateSplitDashboard() {
     return (
 
         <div className="box-shadow shadow-sm p10 mt15">
-            <h2 className="title">State Wise Split</h2>
-            <ul className="list-ui mt20">
+            <h4 className="title">State Wise Split</h4>
+            <ul className="list-ui">
                 <h5>{totalCount}</h5>
                 {stateAllocation.map((state) => (
                     <li className="">

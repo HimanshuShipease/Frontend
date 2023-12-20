@@ -1,5 +1,6 @@
 import React from 'react';
 import 'devextreme/data/odata/store';
+import './DataTable.css'
 import {
   Column,
   DataGrid,
@@ -64,7 +65,7 @@ const DataTable = () => (
     <HeaderFilter visible={true} />
     {/* <GroupPanel visible={true} /> */}
     {/* <Scrolling mode="virtual" /> */}
-    <Paging defaultPageSize={4} />
+    <Paging defaultPageSize={10} />
     <Editing
       mode="row"
       pagination={true}

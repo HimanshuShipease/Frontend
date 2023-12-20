@@ -5,13 +5,13 @@ import TopSellingDashboard from '../Components/Overview/TopSellingDashboard'
 import RevenueDashboard from '../Components/Overview/RevenueDashboard'
 import CourierWiseDashboard from '../Components/Overview/CourierWiseDashboard'
 import PopularCustomerDashboard from '../Components/Overview/PopularCustomerDashboard'
-import TodayOrderDashboard from '../Components/Overview/TodayOrderDashboard'
+import TotalShipment from '../Components/Overview/TotalShipment'
 
 const Overview = () => {
   return (
     <>
       <Row>
-        <TodayOrderDashboard />
+        <TotalShipment />
         <Col className="col-6">
           <TotalInfoDashboard />
           <TopSellingDashboard />

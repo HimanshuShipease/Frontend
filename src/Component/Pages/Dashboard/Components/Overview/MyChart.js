@@ -82,7 +82,7 @@ class MyChart extends React.Component {
 
         return (
             <div className="box-shadow shadow-sm p10 mt15">
-                <h2 className="title">State Wise Split</h2>
+                <h4 className="title">State Wise Split</h4>
                 <div>
                     <Chart options={this.state.options} series={this.state.options.series} type="bar" height={350} />
                 </div>

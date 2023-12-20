@@ -75,7 +75,7 @@ html::-webkit-scrollbar-track {
 }
 
 .bg-red {
-  background: #D81B2A !important;
+  background: #FF6470 !important;
 }
 
 .text-gray {
@@ -123,7 +123,7 @@ html::-webkit-scrollbar-track {
 }
 
 .text-red {
-  color: #D81B2A;
+  color: #FF6470;
 }
 
 .text-white {
@@ -135,7 +135,7 @@ html::-webkit-scrollbar-track {
 }
 
 .text-green {
-  color: #3BB54B;
+  color: #55B685;
 }
 
 .bold-600 {
@@ -183,7 +183,7 @@ html::-webkit-scrollbar-track {
 }
 
 .bg-blue {
-  background-color: #1975C9;
+  background-color: #A278FD;
 }
 
 .bg-blue-dark {
@@ -191,15 +191,15 @@ html::-webkit-scrollbar-track {
 }
 
 .bg-red {
-  background-color: #D81B2A;
+  background-color: #FF6470;
 }
 
 .bg-green {
-  background-color: #3BB54B;
+  background-color: #55B685;
 }
 
 .bg-orange {
-  background-color: #FDA005;
+  background-color: #F6B954;
 }
 
 .bg-aqua {
@@ -234,11 +234,12 @@ html::-webkit-scrollbar-track {
 }
 
 .title {
-  font-size: 14px;
+  font-size: 18px;
   color: #0B3B5B;
   padding: 0px;
   margin: 0px;
-  font-weight: 600;
+  font-weight: 500;
+  margin-bottom: 15px;
 }
 
 .tab-btn-ui {
@@ -363,15 +364,15 @@ html::-webkit-scrollbar-track {
 
 .btn-red-light {
   background-color: #FCEAEA !important;
-  color: #D81B2A !important;
+  color: #FF6470 !important;
   border: #FCEAEA !important;
 }
 
 .btn-red-light:hover,
 .btn-red-light:active {
-  background-color: #D81B2A !important;
+  background-color: #FF6470 !important;
   color: #FCEAEA !important;
-  border: #D81B2A !important;
+  border: #FF6470 !important;
 }
 
 

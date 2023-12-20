@@ -3,8 +3,9 @@ import { LiaShippingFastSolid } from "react-icons/lia";
 import axios from "axios";
 import Col from "react-bootstrap/Col";
 import StateSplitDashboard from "./StateSplitDashboard";
+import DeliveryPerformance from "./DeliveryPerformance";
 
-function UpperDashboard() {
+function TotalShipment() {
   const [shipmentData, setShipmentData] = useState(null);
   const [totalCreated, setTotalCreated] = useState(null);
   const [totalToBePicked, setToBePicked] = useState(null);
@@ -244,9 +245,10 @@ function UpperDashboard() {
           </div>
         </div>
       </div>
+      <DeliveryPerformance/>
       <StateSplitDashboard />
     </Col>
   );
 }
 
-export default UpperDashboard;
+export default TotalShipment;
