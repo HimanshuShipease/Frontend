@@ -98,7 +98,7 @@
   }
   
   .company-logo img {
-    /* width: 100%; */
+    width: 90%;
     height: auto;
     padding: 0 10px;
     margin: 20px 0;
@@ -179,6 +179,9 @@
 
 @media screen and (min-width: 1601px) {
   #sidebar .nav-link{
-    width: 150px;
+    width: 183px;
   }
+  .absolute-sidebar {
+    max-width: 230px;
+}
 }

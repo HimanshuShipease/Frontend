@@ -50,6 +50,13 @@ html{
   margin-inline: 207px 10px;
 }
 
+@media screen and (min-width: 1601px) {
+  .rightContainer{
+    margin-inline: 247px 10px;
+  }
+}
+
+
 @media screen and (max-width: 1600px) {
   html{
     font-size: 14px;
