@@ -32,6 +32,10 @@ html::-webkit-scrollbar-track {
   border-radius: 3px;
 }
 
+p{
+  margin-bottom: 0.5rem;
+}
+
 /*Figma Ui*/
 
 .mt20 {
@@ -136,6 +140,10 @@ html::-webkit-scrollbar-track {
 
 .text-green {
   color: #55B685;
+}
+
+.text-yellow {
+  color: #F6B954;
 }
 
 .bold-600 {

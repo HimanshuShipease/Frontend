@@ -34,3 +34,76 @@
 .last-orders .table tbody tr:nth-of-type(odd) {
     --bs-table-accent-bg: #f2f2f2;
 }
+
+.state-wise-card .card-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.state-wise-card .export-report{
+    font-size: 12px;
+    padding: 5px;
+    background: #E5E3F4;
+    border-radius: 4px;
+    color: #4E46B4;
+    margin-bottom: 15px;
+}
+
+.state-wise-card .card-count{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.state-wise-card h5{
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.state-wise-card h5 span{
+    font-weight: 400;
+}
+
+.state-wise-card p{
+    margin-bottom: 0;
+}
+
+.state-wise-card .list-ui{
+    margin-top: 1rem;
+}
+
+.state-wise-card .list-ui li{
+    margin-bottom: 0;
+    padding-block: 2;
+}
+
+.content-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-container .gender-side{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.content-container .gender-side svg{
+    height: 30px;
+}
+
+.content-container .gender-side svg path{
+    fill: #6A49E5;
+}
+
+.content-container .gender-icon{
+    background-color: #E7E1FD;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+}

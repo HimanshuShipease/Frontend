@@ -78,7 +78,7 @@ function TotalInfoDashboard() {
                 </div>
               </div>
               <div className="col-2 col-lg-2 col-sm-12 col-md-12 chartContainer">
-                <LineGraph cardColor="rgba(75, 192, 192, 1)" />
+                <LineGraph cardColor="#55B685" />
                 <div className="card-footer">
                   <span className="text-red font13 pt20 bold-600 d-block text-end">
                     +{totalCustomer}%
@@ -106,14 +106,14 @@ function TotalInfoDashboard() {
                   <div className="alignWord">
                     <p className="font13 text-gray m-0">Daily Shipment</p>
                     <h2 className="font20 title-text p-y bold-600 m0">{parseInt(shipmentCounter?.daily_shipment)}</h2>
-                    <p className="font12 text-red">Pending ({shipmentCounter?.daily_shipment})</p>
+                    <p className="font12 text-yellow">Pending ({shipmentCounter?.daily_shipment})</p>
                   </div>
                 </div>
               </div>
               <div className="col-2 col-lg-2 col-sm-12 col-md-12 chartContainer">
                 {/* <img src="graph-red.png" className="inline-block" /> */}
                 {/* <Graph/> */}
-                <LineGraph cardColor="rgba(75, 192, 192, 1)" />
+                <LineGraph cardColor="#F6B954" />
                 <div className="card-footer">
                   <span className="text-yellow font13 pt20 bold-600 d-block text-end">
                     +{dailyShipment}%

@@ -3,6 +3,7 @@ import axios from "axios";
 import Col from "react-bootstrap/Col";
 import '../Overview/totalInfoDashboard.css'
 import DataTable from "../Overview/DataTable/DataTable";
+import TableDashboard from '../Overview/TableDashboard'
 import './TotalOrderInfo.css'
 import { HiTrendingDown, HiTrendingUp } from "react-icons/hi";
 import iconRTO from '../../../../../assets/image/icons/RTO_icon.png'
@@ -157,11 +158,11 @@ function TotalOrderInfo() {
           </div>
         </div>
       </div>
-      {/* <TableDashboard /> */}
-      <div className="mt-3 datatable-container">
+      <TableDashboard />
+      {/* <div className="mt-3 datatable-container">
         <h4 className="title">Last 30 Days Order</h4>
         <DataTable />
-      </div>
+      </div> */}
     </Col>
   );
 }
