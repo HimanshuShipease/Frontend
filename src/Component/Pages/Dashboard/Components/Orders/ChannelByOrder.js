@@ -69,7 +69,6 @@ const ChannelByOrder = () => {
   }, [requestData]);
   return (
     <>
-<Col className='col-3'>
       <div className="box-shadow shadow-sm p10">
       <h4 className="title">Channel by Order</h4>
 
@@ -201,8 +200,7 @@ const ChannelByOrder = () => {
           </div>
         </div>
       </div>
-      <StateSplitDashboard />
-    </Col>    </>
+      </>
   )
 }
 

@@ -14,3 +14,9 @@
 .navbar-expand .navbar-nav .nav-link{
     padding: 5px 7px;
 }
+
+.navbar-expand .navbar-nav .nav-link.active{
+background-color: #dbdbdb;
+border-radius: 4px;
+color: #315872;
+}

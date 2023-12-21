@@ -26,7 +26,7 @@ function TopSellingDashboard() {
     },[requestData]);
 
     return (
-        <div className="box-shadow shadow-sm p10 mt15 top-selling-page">
+        <div className="box-shadow shadow-sm p10 top-selling-page">
             <div className="d-flex justify-content-between align-items-center">
                 <h4 className="title">Top Selling Products</h4>
             </div>

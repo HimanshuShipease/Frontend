@@ -11,14 +11,14 @@
   cursor: pointer;
 }
 
-#shipEaseNavbarNav .nav-link:active,
+/* #shipEaseNavbarNav .nav-link:active,
 .nav-link:focus,
 .nav-link:hover {
   background-color: #f3f3f3;
   background-color: #dbdbdb;
-  border-radius: 4px; /* font-weight: 700; */
+  border-radius: 4px;
   color: #315872;
-}
+} */
 
 .iconContainer {
   width: 38px;

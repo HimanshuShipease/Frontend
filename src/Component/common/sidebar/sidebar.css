@@ -113,7 +113,7 @@
 /* Customize the scrollbar */
 .side-navbar::-webkit-scrollbar {
   width: 8px;
-  height: 20px;
+  height: 10px;
 }
 .side-navbar::-webkit-scrollbar-thumb {
   background-color: #315872;
@@ -174,4 +174,11 @@
 
 .submenu a:hover {
   background-color: #333;
+}
+
+
+@media screen and (min-width: 1601px) {
+  #sidebar .nav-link{
+    width: 150px;
+  }
 }

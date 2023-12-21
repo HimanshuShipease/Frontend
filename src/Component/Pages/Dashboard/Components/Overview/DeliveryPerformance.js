@@ -3,7 +3,7 @@ import React from 'react'
 const DeliveryPerformance = () => {
     return (
         <>
-            <div className="box-shadow shadow-sm p10 mt15">
+            <div className="box-shadow shadow-sm p10">
                 <h4 className="title">Delivery Performance</h4>
                 <svg
   xmlnsXlink="http://www.w3.org/1999/xlink"

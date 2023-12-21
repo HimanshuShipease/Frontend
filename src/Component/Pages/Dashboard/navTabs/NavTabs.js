@@ -2,11 +2,7 @@ import React from "react";
 import {
   Card,
   Navbar,
-  Nav,
-  NavDropdown,
-  Modal,
-  Button,
-  Image,
+  Nav
 } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -28,7 +24,7 @@ export default function NavTabs(props) {
       <Navbar.Collapse id="navTabs">
         <Nav className="ml-auto w-100 alignContent">
           <div className="alignContent">
-            <Nav.Link
+            <Nav.Link className={`${props.activeTab === "Overview" ? "active" : ""}`}
               onClick={() => {
                 props.setActiveTab("Overview");
               }}
@@ -38,7 +34,7 @@ export default function NavTabs(props) {
                 Overview
               </div>
             </Nav.Link>
-            <Nav.Link
+            <Nav.Link className={`${props.activeTab === "Orders" ? "active" : ""}`}
               onClick={() => {
                 props.setActiveTab("Orders");
               }}
@@ -49,7 +45,7 @@ export default function NavTabs(props) {
                 Orders
               </div>
             </Nav.Link>
-            <Nav.Link
+            <Nav.Link className={`${props.activeTab === "Shipment" ? "active" : ""}`}
               onClick={() => {
                 props.setActiveTab("Shipment");
               }}
@@ -60,7 +56,7 @@ export default function NavTabs(props) {
                 Shipment
               </div>
             </Nav.Link>
-            <Nav.Link
+            <Nav.Link className={`${props.activeTab === "NDR" ? "active" : ""}`}
               onClick={() => {
                 props.setActiveTab("NDR");
               }}
@@ -71,7 +67,7 @@ export default function NavTabs(props) {
                 NDR
               </div>
             </Nav.Link>
-            <Nav.Link
+            <Nav.Link className={`${props.activeTab === "RTO" ? "active" : ""}`}
               onClick={() => {
                 props.setActiveTab("RTO");
               }}
@@ -82,7 +78,7 @@ export default function NavTabs(props) {
                 RTO
               </div>
             </Nav.Link>
-            <Nav.Link
+            <Nav.Link className={`${props.activeTab === "Courier Delays" ? "active" : ""}`}
               onClick={() => {
                 props.setActiveTab("Courier Delays");
               }}

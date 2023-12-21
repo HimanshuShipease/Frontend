@@ -1,28 +1,44 @@
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
 import TopSellingDashboard from '../Components/Overview/TopSellingDashboard'
-import PopularCustomerDashboard from '../Components/Overview/PopularCustomerDashboard'
 import ChannelByOrder from '../Components/Orders/ChannelByOrder'
 import TotalOrderInfo from '../Components/Orders/TotalOrderInfo'
 import CancelOrder from '../Components/Orders/CancelOrder'
 import BuyerDemographic from '../Components/Orders/BuyerDemographic'
+import PrepaidCOD from '../Components/Orders/PrepaidCOD'
+import StateSplitDashboard from '../Components/Overview/StateSplitDashboard'
+import TableDashboard from '../Components/Overview/TableDashboard'
+import DomesticInternational from '../Components/Orders/DomesticInternational'
+import BestSKU from '../Components/Orders/BestSKU'
 
 const Orders = () => {
   return (
     <>
-    <Row>
-      <ChannelByOrder/>
-      <Col className="col-6">
-        <TotalOrderInfo />
-        <TopSellingDashboard />
-      </Col>
-      <Col className="col-3 cardsSpace">
-        <CancelOrder />
-        <BuyerDemographic />
-        <PopularCustomerDashboard />
-      </Col>
-    </Row>
-  </>
+      <Row>
+        <Col className="col-3 cardsSpace">
+          <ChannelByOrder />
+          <StateSplitDashboard />
+        </Col>
+        <Col className="col-6 cardsSpace">
+          <TotalOrderInfo />
+          <TableDashboard />
+          <TopSellingDashboard />
+          <Row>
+            <Col className='col-7'>
+              <BestSKU />
+            </Col>
+            <Col className='col-5'>
+              <DomesticInternational />
+            </Col>
+          </Row>
+        </Col>
+        <Col className="col-3 cardsSpace">
+          <CancelOrder />
+          <BuyerDemographic />
+          <PrepaidCOD />
+        </Col>
+      </Row>
+    </>
   )
 }
 

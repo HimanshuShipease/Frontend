@@ -13,7 +13,7 @@ function App() {
          <div>
            <Sidebar />
          </div>
-         <div className="w-100 rightContainer">
+         <div className="rightContainer">
            <div>
              <Header />
            </div>

@@ -14,7 +14,7 @@ function Dashboard() {
 
   return (
     <>
-      <NavTabs setActiveTab={setActiveTab} />
+      <NavTabs activeTab={activeTab} setActiveTab={setActiveTab} />
 
       {/* overview */}
       <div className={`${activeTab === "Overview" ? "d-block" : "d-none"}`}>

@@ -55,7 +55,7 @@ function TotalOrderInfo() {
   }, []);
 
   return (
-    <Col>
+    <>
       <div className="grid gap-3">
         {/* Card 1 */}
         <div className="">
@@ -158,12 +158,12 @@ function TotalOrderInfo() {
           </div>
         </div>
       </div>
-      <TableDashboard />
+      {/* <TableDashboard /> */}
       {/* <div className="mt-3 datatable-container">
         <h4 className="title">Last 30 Days Order</h4>
         <DataTable />
       </div> */}
-    </Col>
+    </>
   );
 }
 

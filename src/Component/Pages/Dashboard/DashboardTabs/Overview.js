@@ -6,14 +6,22 @@ import RevenueDashboard from '../Components/Overview/RevenueDashboard'
 import CourierWiseDashboard from '../Components/Overview/CourierWiseDashboard'
 import PopularCustomerDashboard from '../Components/Overview/PopularCustomerDashboard'
 import TotalShipment from '../Components/Overview/TotalShipment'
+import DeliveryPerformance from '../Components/Overview/DeliveryPerformance'
+import StateSplitDashboard from '../Components/Overview/StateSplitDashboard'
+import TableDashboard from '../Components/Overview/TableDashboard'
 
 const Overview = () => {
   return (
     <>
       <Row>
-        <TotalShipment />
-        <Col className="col-6">
+        <Col className="col-3 cardsSpace">
+          <TotalShipment />
+          <DeliveryPerformance />
+          <StateSplitDashboard />
+        </Col>
+        <Col className="col-6 cardsSpace">
           <TotalInfoDashboard />
+          <TableDashboard />
           <TopSellingDashboard />
         </Col>
         <Col className="col-3 cardsSpace">

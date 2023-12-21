@@ -86,16 +86,20 @@
 
 .content-container .gender-side{
     display: flex;
-    align-items: center;
-    gap: 5px;
+    align-items: flex-start;
+    gap: 8px;
 }
 
 .content-container .gender-side svg{
-    height: 30px;
+    height: 22px;
 }
 
 .content-container .gender-side svg path{
     fill: #6A49E5;
+}
+
+.content-container .gender-side .male svg path{
+    fill: #DB445B;
 }
 
 .content-container .gender-icon{
@@ -106,4 +110,8 @@
     border-radius: 4px;
     align-items: center;
     justify-content: center;
+}
+
+.content-container .gender-icon.male{
+    background-color: #F8D8DE;
 }

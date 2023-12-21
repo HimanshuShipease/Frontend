@@ -14,18 +14,18 @@ const BuyerDemographic = () => {
                                 <div className='gender-icon female'>
                                     <FaFemale height={30} />
                                 </div>
-                                <div>
-                                    <h5>Female</h5>
-                                    <h5>40%</h5>
+                                <div className='d-flex flex-column gap-1'>
+                                    <h5 className='font13 mb-0'>Female</h5>
+                                    <h5 className='fw-bold'>40%</h5>
                                 </div>
                             </div>
                             <div className='gender-side'>
                                 <div className='gender-icon male'>
                                     <FaMale />
                                 </div>
-                                <div>
-                                    <h5>Male</h5>
-                                    <h5>60%</h5>
+                                <div className='d-flex flex-column gap-1'>
+                                    <h5 className='font13 mb-0'>Male</h5>
+                                    <h5 className='fw-bold'>60%</h5>
                                 </div>
                             </div>
                         </div>

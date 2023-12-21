@@ -37,7 +37,7 @@ function StateSplitDashboard() {
 
     return (
 
-        <div className="box-shadow shadow-sm p10 mt15 state-wise-card">
+        <div className="box-shadow shadow-sm p10 state-wise-card">
             <div className="card-heading">
                 <h4 className="title">State Wise Split</h4>
                 <p className="export-report">Export Report</p>

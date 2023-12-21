@@ -34,16 +34,16 @@ function TableDashboard() {
   }, []);
 
   return (
-      <div className="box-shadow shadow-sm p10 mt15 last-orders">
+      <div className="box-shadow shadow-sm p10 last-orders">
           <div className="d-flex justify-content-between align-items-center">
               <h4 className="title">Last 30 Days Order</h4>
 
-              <Form.Select className="w15 font13">
+              {/* <Form.Select className="w15 font13">
                   <option>Order Date</option>
                   <option>Order ID</option>
                   <option>Amount</option>
                   <option>Status</option>
-              </Form.Select>
+              </Form.Select> */}
           </div>
           <div className="table-responsive">
               {isLoading ? (
@@ -68,7 +68,7 @@ function TableDashboard() {
                           <td>
                               {order.id}
                           </td>
-                          <td>{order.customer_order_number}</td>
+                          <td className="ws-no-wrap">{order.customer_order_number}</td>
                           <td>{order.awb_number}</td>
                           <td>{order.courier_partner}</td>
                           <td>{order.shipping_charges}</td>

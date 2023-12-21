@@ -90,12 +90,20 @@ p{
   color: #9D9595;
 }
 
-.font13 {
-  font-size: 13px;
+.font10 {
+  font-size: 10px;
+}
+
+.font11 {
+  font-size: 11px;
 }
 
 .font12 {
   font-size: 12px;
+}
+
+.font13 {
+  font-size: 13px;
 }
 
 .font15 {

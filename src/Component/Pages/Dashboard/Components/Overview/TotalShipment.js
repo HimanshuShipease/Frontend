@@ -71,7 +71,7 @@ function TotalShipment() {
   }, [requestData]);
 
   return (
-    <Col className='col-3'>
+    <>
       <div className="box-shadow shadow-sm p10">
         <div className="row">
           <div className="col-8">
@@ -245,9 +245,8 @@ function TotalShipment() {
           </div>
         </div>
       </div>
-      <DeliveryPerformance/>
-      <StateSplitDashboard />
-    </Col>
+      
+    </>
   );
 }
 

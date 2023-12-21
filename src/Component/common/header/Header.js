@@ -16,7 +16,7 @@ import "./header.css";
 export default function Header() {
   return (
     <Navbar
-      className="w-100 box-shadow shadow-sm p10-inline"
+      className="box-shadow shadow-sm p10-inline"
       bg="light"
       variant="light"
       id="shipEaseNavbarNav"
