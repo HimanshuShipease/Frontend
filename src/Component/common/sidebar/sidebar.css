@@ -23,7 +23,7 @@
     top: 0;
     left: 0;
     z-index: 2;
-    max-width: 190px;
+    max-width: 191px;
   }
 
   .placeholder{
@@ -67,12 +67,13 @@
     padding: 2px 20px;
   }
   
-  
+/*   
   #sidebar .nav .nav-link :hover{
     background-color: #dbdbdb;
     color: #315872;
     font-weight: 700;
-  }
+  } */
+
   #sidebar .nav-link{
     width: 176px;
     color: #727986;
@@ -89,12 +90,12 @@
   #sidebar .nav-link:active,
   #sidebar .nav-link:focus,
   #sidebar .nav-link:hover {
-    background-color: #f3f3f3;
-    background-color: #dbdbdb;
+    background-color: #E5E3F4;
     font-weight: 700;
     color: #315872;
+    border-radius: 4px;
+    padding-inline: 7px 0px;
     /* border-left: 4px solid #315872; */
-
   }
   
   .company-logo img {

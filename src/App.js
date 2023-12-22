@@ -5,6 +5,7 @@ import Sidebar from "./Component/common/sidebar/Sidebar";
 import Header from "./Component/common/header/Header";
 import "./App.css";
 import Dashboard from "./Component/Pages/Dashboard/Dashboard";
+import Orders from './Component/Pages/Dashboard/DashboardTabs/Orders';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
              <Header />
            </div>
            <Routes>            
+             <Route path="/Orders" element={<Orders/>} />
              <Route path="/" element={<Dashboard/>} />
            </Routes>
          </div>

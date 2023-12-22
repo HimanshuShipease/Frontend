@@ -8,7 +8,7 @@ function CancelOrder() {
             <div className="row">
                 <div className="col">
                     <h4 className="title">Cancel Orders</h4>
-                    <img src={CancelOrders} alt="CancelOrders" width={250}/>
+                    <img className="graph-image" src={CancelOrders} alt="CancelOrders"/>
                 </div>
             </div>
         </div>

@@ -4,18 +4,17 @@ import { Link } from "react-router-dom";
 
 const sidebarItems = [
   { icon: "bx bxs-dashboard", to: "/", label: "Dashboard" },
-  { icon: "bx bx-user-check", to: "/", label: "Orders" },
-  { icon: "bx bx-conversation", to: "/", label: "More On Orders" },
-  { icon: "bx bx-conversation", to: "/", label: "More--- On Orders" },
-  { icon: "bx bx-conversation", to: "/", label: "Shipments" },
-  { icon: "bx bx-conversation", to: "/", label: "Channels" },
-  { icon: "bx bx-conversation", to: "/", label: "OMS" },
+  { icon: "bx bx-user-check", to: "/Orders", label: "Orders" },
+  { icon: "bx bx-conversation", to: "/MoreOnOrders", label: "More On Orders" },
+  { icon: "bx bx-conversation", to: "/Shipments", label: "Shipments" },
+  { icon: "bx bx-conversation", to: "/Channels", label: "Channels" },
+  { icon: "bx bx-conversation", to: "/OMS", label: "OMS" },
   { icon: "bx bx-conversation", to: "/billing", label: "Billing" },
-  { icon: "bx bx-conversation", to: "/", label: "Weight Reco." },
-  { icon: "bx bx-user-check", to: "/", label: "Customer" },
-  { icon: "bx bx-conversation", to: "/", label: "Tools" },
-  { icon: "bx bx-conversation", to: "/", label: "MIS" },
-  { icon: "bx bx-conversation", to: "/order", label: "Customer Support" },
+  { icon: "bx bx-conversation", to: "/WeightReconciliation", label: "Weight Reco." },
+  { icon: "bx bx-user-check", to: "/Customer", label: "Customer" },
+  { icon: "bx bx-conversation", to: "/Tools", label: "Tools" },
+  { icon: "bx bx-conversation", to: "/MIS", label: "MIS" },
+  { icon: "bx bx-conversation", to: "/CustomerSupport", label: "Customer Support" },
 ];
 
 export default function Sidebar() {

@@ -1,14 +1,14 @@
 import React from 'react'
-import ZoneImage from '../../../../../assets/image/ZoneImage.png'
+import NDRstatus from '../../../../../assets/image/NDRstatus.png'
 
-const ZoneWiseData = () => {
+const NDRStatus = () => {
     return (
         <>
             <div className="box-shadow shadow-sm p10">
                 <div className="row">
                     <div className="col">
-                        <h4 className="title">Zone Wise Data</h4>
-                        <img className="graph-image" src={ZoneImage} alt="ZoneImage" />
+                        <h4 className="title">NDR Status</h4>
+                        <img className="graph-image p10" src={NDRstatus} alt="NDRstatus" />
                     </div>
                 </div>
             </div>
@@ -16,4 +16,4 @@ const ZoneWiseData = () => {
     )
 }
 
-export default ZoneWiseData
+export default NDRStatus

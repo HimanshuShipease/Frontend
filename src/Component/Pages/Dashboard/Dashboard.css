@@ -32,7 +32,7 @@
 
 .top-selling-page .table tbody tr:nth-of-type(odd),
 .last-orders .table tbody tr:nth-of-type(odd) {
-    --bs-table-accent-bg: #f2f2f2;
+    --bs-table-accent-bg: #E5E3F4;
 }
 
 .state-wise-card .card-heading{
@@ -114,4 +114,34 @@
 
 .content-container .gender-icon.male{
     background-color: #F8D8DE;
+}
+
+.best-sku-products table{
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.best-sku-products table tr{
+    border-bottom: 1px solid #F2F2F2;
+    padding-block: 1px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.best-sku-products table td{
+    white-space: nowrap;
+    font-size: 12px;
+    padding-block: 7px;
+}
+
+.best-sku-products table tr:last-of-type{
+    border-bottom: none;
+}
+
+.best-sku-products table tr:last-of-type td{
+    padding-bottom: 0px;
+}
+
+.graph-image{
+    max-width: -webkit-fill-available;
 }

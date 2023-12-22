@@ -10,6 +10,7 @@ import StateSplitDashboard from '../Components/Overview/StateSplitDashboard'
 import TableDashboard from '../Components/Overview/TableDashboard'
 import DomesticInternational from '../Components/Orders/DomesticInternational'
 import BestSKU from '../Components/Orders/BestSKU'
+import PopularOrdersLocation from '../Components/Orders/PopularOrdersLocation'
 
 const Orders = () => {
   return (
@@ -36,6 +37,7 @@ const Orders = () => {
           <CancelOrder />
           <BuyerDemographic />
           <PrepaidCOD />
+          <PopularOrdersLocation />
         </Col>
       </Row>
     </>

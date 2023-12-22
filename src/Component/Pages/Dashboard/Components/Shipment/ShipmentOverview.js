@@ -37,11 +37,12 @@ const ShipmentOverview = () => {
                     <Table hover className="table-ui">
                         <thead>
                             <tr>
-                                <th scope="col" style={{ width: '7%' }}>S.No</th>
-                                <th scope="col">Product Name</th>
-                                <th scope="col" style={{ width: '15%' }}>Category</th>
-                                <th scope="col" style={{ width: '10%' }}>Stock</th>
-                                <th scope="col" style={{ width: '8%' }}>Total</th>
+                                <th scope="col" style={{ width: '12%' }}>Courier Name</th>
+                                <th scope="col">Allocation Number</th>
+                                <th scope="col" style={{ width: '15%' }}>Average TAT</th>
+                                <th scope="col" style={{ width: '16%' }}>Average Shipment</th>
+                                <th scope="col" style={{ width: '12%' }}>Total RTO %</th>
+                                <th scope="col" style={{ width: '12%' }}>Total NDR %</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -55,6 +56,7 @@ const ShipmentOverview = () => {
                                             In Stock
                                         </span>
                                     </td>
+                                    <td>{product?.total}</td>
                                     <td>{product?.total}</td>
                                 </tr>
                             ))}

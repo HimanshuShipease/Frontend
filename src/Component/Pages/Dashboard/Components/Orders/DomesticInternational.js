@@ -16,7 +16,7 @@ const DomesticInternational = () => {
                         <p className='font10 text-red'>International Orders</p>
                     </Col>
                 </Row>
-                <img className="mt-3" src={BarGraph} alt='BarGraph' width={190}/>
+                <img className="mt-3 graph-image" src={BarGraph} alt='BarGraph'/>
             </div>
         </>
     )
