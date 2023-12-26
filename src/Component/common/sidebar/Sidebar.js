@@ -1,20 +1,34 @@
 import React, { useState } from "react";
 import "./sidebar.css";
 import { Link } from "react-router-dom";
+import { MdOutlineDashboard } from "react-icons/md";
+import DashboardIcon from "./Icons/DashboardIcon";
+import OrdersIcon from "./Icons/OrdersIcon";
+import BillingIcon from "./Icons/BillingIcon";
+import ChannelsIcon from "./Icons/ChannelsIcon";
+import CustomerSupportIcon from "./Icons/CustomerSupportIcon";
+import MoreOnOrdersIcon from "./Icons/MoreOnOrdersIcon";
+import ShipmentsIcon from "./Icons/ShipmentsIcon";
+import OMSIcon from "./Icons/OMSIcon";
+import WeightRecordsIcon from "./Icons/WeightRecordsIcon";
+import ToolsIcons from "./Icons/ToolsIcons";
+import CustomerIcon from "./Icons/CustomerIcon";
+import MISIcon from "./Icons/MISIcon";
+
 
 const sidebarItems = [
-  { icon: "bx bxs-dashboard", to: "/", label: "Dashboard" },
-  { icon: "bx bx-user-check", to: "/Orders", label: "Orders" },
-  { icon: "bx bx-conversation", to: "/MoreOnOrders", label: "More On Orders" },
-  { icon: "bx bx-conversation", to: "/Shipments", label: "Shipments" },
-  { icon: "bx bx-conversation", to: "/Channels", label: "Channels" },
-  { icon: "bx bx-conversation", to: "/OMS", label: "OMS" },
-  { icon: "bx bx-conversation", to: "/billing", label: "Billing" },
-  { icon: "bx bx-conversation", to: "/WeightReconciliation", label: "Weight Reco." },
-  { icon: "bx bx-user-check", to: "/Customer", label: "Customer" },
-  { icon: "bx bx-conversation", to: "/Tools", label: "Tools" },
-  { icon: "bx bx-conversation", to: "/MIS", label: "MIS" },
-  { icon: "bx bx-conversation", to: "/CustomerSupport", label: "Customer Support" },
+  { icon: DashboardIcon, to: "/", label: "Dashboard" },
+  { icon: OrdersIcon, to: "/Orders", label: "Orders" },
+  { icon: MoreOnOrdersIcon, to: "/MoreOnOrders", label: "More On Orders" },
+  { icon: ShipmentsIcon, to: "/Shipments", label: "Shipments" },
+  { icon: ChannelsIcon, to: "/Channels", label: "Channels" },
+  { icon: OMSIcon, to: "/OMS", label: "OMS" },
+  { icon: BillingIcon, to: "/billing", label: "Billing" },
+  { icon: WeightRecordsIcon, to: "/WeightReconciliation", label: "Weight Reco." },
+  { icon: CustomerIcon, to: "/Customer", label: "Customer" },
+  { icon: ToolsIcons, to: "/Tools", label: "Tools" },
+  { icon: MISIcon, to: "/MIS", label: "MIS" },
+  { icon: CustomerSupportIcon, to: "/CustomerSupport", label: "Customer Support" },
 ];
 
 export default function Sidebar() {
@@ -28,9 +42,8 @@ export default function Sidebar() {
       >
         <ul className="nav flex-column text-white w-100">
           <div
-            className={` ${
-              expanded ? "large-img-wrapper" : "small-img-wrapper"
-            } company-logo`}
+            className={` ${expanded ? "large-img-wrapper" : "small-img-wrapper"
+              } company-logo`}
           >
             {expanded ? (
               <img
@@ -56,7 +69,7 @@ export default function Sidebar() {
               className="nav-link"
             >
               <div className="sidebar-label-wrapper">
-                <i className={item.icon}></i>
+                <item.icon size={20} />
                 {expanded && <span className="mx-2">{item.label}</span>}
               </div>
             </Link>

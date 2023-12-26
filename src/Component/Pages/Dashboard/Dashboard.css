@@ -145,3 +145,9 @@
 .graph-image{
     max-width: -webkit-fill-available;
 }
+
+@media screen and (max-width: 1600px) {
+    .top-selling-page table td {
+        max-width: 178px;
+    }
+}

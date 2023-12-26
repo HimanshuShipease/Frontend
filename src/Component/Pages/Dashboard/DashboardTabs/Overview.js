@@ -9,6 +9,7 @@ import TotalShipment from '../Components/Overview/TotalShipment'
 import DeliveryPerformance from '../Components/Overview/DeliveryPerformance'
 import StateSplitDashboard from '../Components/Overview/StateSplitDashboard'
 import TableDashboard from '../Components/Overview/TableDashboard'
+import OverviewDetails from '../Components/Overview/OverviewDetails'
 
 const Overview = () => {
   return (
@@ -22,6 +23,7 @@ const Overview = () => {
         <Col className="col-6 cardsSpace">
           <TotalInfoDashboard />
           <TableDashboard />
+          <OverviewDetails />
           <TopSellingDashboard />
         </Col>
         <Col className="col-3 cardsSpace">

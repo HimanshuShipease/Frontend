@@ -84,7 +84,7 @@
 
   .sidebar-label-wrapper{
     display: flex;
-    align-items: center;    
+    align-items: flex-end;    
   }
   
   #sidebar .nav-link:active,
